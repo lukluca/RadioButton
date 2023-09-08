@@ -4,8 +4,8 @@
     <img src="https://img.shields.io/badge/platform-iOS | macOS-blue.svg?style=flat" alt="Platforms" />
     <img src="https://img.shields.io/badge/Swift-5-orange.svg" />
     <a href="https://swift.org/package-manager"><img src="https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" /></a>
-    <a href=[license-url"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
-    <a href="https://github.com/lukluca"><img src="https://img.shields.io/badge/contact-@lukluca-blue.svg?style=flat"/></a>
+    <a href=[license-url]><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
+    <a href=[user-url]=><img src="https://img.shields.io/badge/contact-@lukluca-blue.svg?style=flat"/></a>
     <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /></a>
 </p>
 
@@ -65,9 +65,9 @@ It's a requirement that your model must implement `CaseIterable`, `Hashable` and
 
 ## Meta
 
-[@lukluca]([project-url])
+[@lukluca]([user-url])
 
 [https://github.com/lukluca/RadioButton](https://github.com/lukluca/RadioButton)
 
 [license-url]: LICENSE.txt
-[project-url]: https://github.com/lukluca
+[user-url]: https://github.com/lukluca
