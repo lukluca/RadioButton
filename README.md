@@ -90,7 +90,7 @@ It could be extended by implementing the following tasks:
 
 ## 🔷 License
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 `RadioButton` is available under the MIT license. See the [license-url](LICENSE) file for more info.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 `RadioButton` is available under the MIT license. See the [LICENSE.txt](LICENSE) file for more info.
 
 [license-url]: LICENSE.txt
 [user-url]: https://github.com/lukluca
