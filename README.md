@@ -87,10 +87,9 @@ It could be extended by implementing the following tasks:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👨‍💻 [@lukluca]([user-url])
 
-
 ## 🔷 License
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 `RadioButton` is available under the MIT license. See the [LICENSE.txt](LICENSE) file for more info.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 `RadioButton` is available under the MIT license. See the [LICENSE]([license-url]) file for more info.
 
 [license-url]: LICENSE.txt
 [user-url]: https://github.com/lukluca
