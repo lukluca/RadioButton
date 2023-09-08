@@ -24,13 +24,13 @@
 
 `RadioButton` is available via [Swift Package Manager](https://swift.org/package-manager).
 
-Using Xcode 11, go to `File -> Swift Packages -> Add Package Dependency` and enter [https://github.com/lukluca/RadioButton](https://github.com/lukluca/RadioButton) 
+Using Xcode 11, go to `File -> Swift Packages -> Add Package Dependency` and enter [https://github.com/lukluca/RadioButton]([project-url]) 
 
 or add manually the dependency
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/lukluca/RadioButton", from: "1.0.0")
+    .package(url: "https://github.com/lukluca/RadioButton", from: "1.0.1")
 ]
 ```
 
@@ -63,9 +63,13 @@ struct ContentView: View {
 
 It's a requirement that your model must implement `CaseIterable`, `Hashable` and `Identifiable` protocol.
 
+## 🔷 Last version
+
+Last version is  `1.0.1`. This version fixes a build error on the package :sob:. Please use this version as minimum version.
+
 ## 🔷 Roadmap / TODOs
 
-Version `1.0.0` of `RadioButton` contains a very limited set of features, basically no particular feature :-P.
+Version `1.0.0` of `RadioButton` contains a very limited set of features, basically no particular feature :smile:.
 
 It could be extended by implementing the following tasks:
 
@@ -91,5 +95,7 @@ It could be extended by implementing the following tasks:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 `RadioButton` is available under the MIT license. See the [LICENSE]([license-url]) file for more info.
 
-[license-url]: LICENSE.txt
+
+[license-url]: LICENSE
 [user-url]: https://github.com/lukluca
+[project-url]: https://github.com/lukluca/RadioButton
