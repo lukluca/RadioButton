@@ -24,7 +24,7 @@
 
 `RadioButton` is available via [Swift Package Manager](https://swift.org/package-manager).
 
-Using Xcode 11, go to `File -> Swift Packages -> Add Package Dependency` and enter [[project-url]]([project-url]) 
+Using Xcode 11, go to `File -> Swift Packages -> Add Package Dependency` and enter [https://github.com/lukluca/RadioButton](https://github.com/lukluca/RadioButton) 
 
 or add manually the dependency
 
