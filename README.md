@@ -16,7 +16,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ macOS 10.15+  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Xcode 11.0  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Swift 5+  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ iOS 13+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ iOS 14+  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ tvOS 13+  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ watchOS 6+
 
