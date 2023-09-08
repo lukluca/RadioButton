@@ -16,6 +16,14 @@ public struct RadioButton<S, I, R>: View where S: StringProtocol,
   
     @Binding var isSelected: R
     
+    public init(title: S,
+                itemTitle: KeyPath<R, I>,
+                isSelected: Binding<R>) {
+        self.title = title
+        self.itemTitle = itemTitle
+        self._isSelected = isSelected
+    }
+    
     public var body: some View {
         Picker(title, selection: $isSelected) {
             ForEach(R.allCases) {
@@ -36,6 +44,14 @@ public struct RadioButton<S, I, R>: View where S: StringProtocol,
     public let itemTitle: KeyPath<R, I>
   
     @Binding var isSelected: R
+    
+    public init(title: S,
+                itemTitle: KeyPath<R, I>,
+                isSelected: Binding<R>) {
+        self.title = title
+        self.itemTitle = itemTitle
+        self._isSelected = isSelected
+    }
     
     public var body: some View {
         HStack(alignment: .top) {
