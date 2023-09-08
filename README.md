@@ -63,11 +63,34 @@ struct ContentView: View {
 
 It's a requirement that your model must implement `CaseIterable`, `Hashable` and `Identifiable` protocol.
 
-## Meta
+## 🔷 Roadmap / TODOs
 
-[@lukluca]([user-url])
+Version `1.0.0` of `RadioButton` contains a very limited set of features, basically no particular feature :-P.
 
-[https://github.com/lukluca/RadioButton](https://github.com/lukluca/RadioButton)
+It could be extended by implementing the following tasks:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☘️ Add unit/UI tests  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☘️ ... many other improvements
+
+## 🔷 Contributing
+
+👨🏻‍🔧 Feel free to contribute to `RadioButton` by creating a pull request, following these guidelines:
+
+1. Fork `RadioButton`
+2. Create your feature branch
+3. Commit your changes, along with unit tests
+4. Push to the branch
+5. Create pull request
+
+
+## 🔷 Author
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👨‍💻 [@lukluca]([user-url])
+
+
+## 🔷 License
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄 `RadioButton` is available under the MIT license. See the [license-url](LICENSE) file for more info.
 
 [license-url]: LICENSE.txt
 [user-url]: https://github.com/lukluca
