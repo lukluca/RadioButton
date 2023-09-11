@@ -65,7 +65,7 @@ It's a requirement that your model must implement `CaseIterable`, `Hashable` and
 
 ## 🔷 Last version
 
-Last version is  `1.0.1`. This version fixes a build error on the package :sob:. Please use this version as minimum version.
+Last version is  `1.0.2`. This version fixes a build error on the package :sob: for tvOS. Please use this version as minimum version if your project supports tvOS.
 
 ## 🔷 Roadmap / TODOs
 
