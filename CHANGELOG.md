@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+## [1.0.2] - 11-09-2023
+
+### Fixed
+
+- Now is possible to build on tvOS with mim supported version of 14.
  
 ## [1.0.1] - 08-09-2023
 
