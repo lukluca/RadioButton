@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A0D9ED32AAF5651008A20DE /* RadioButtonExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9ED22AAF5651008A20DE /* RadioButtonExampleApp.swift */; };
+		4A0D9ED52AAF5651008A20DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9ED42AAF5651008A20DE /* ContentView.swift */; };
+		4A0D9ED72AAF5652008A20DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0D9ED62AAF5652008A20DE /* Assets.xcassets */; };
+		4A0D9EDA2AAF5652008A20DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0D9ED92AAF5652008A20DE /* Preview Assets.xcassets */; };
+		4A0D9EE42AAF5653008A20DE /* RadioButtonExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9EE32AAF5653008A20DE /* RadioButtonExampleTests.swift */; };
+		4A0D9EEE2AAF5653008A20DE /* RadioButtonExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9EED2AAF5653008A20DE /* RadioButtonExampleUITests.swift */; };
+		4A0D9EF02AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9EEF2AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift */; };
+		4A0D9EFE2AAF5785008A20DE /* RadioButton in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D9EFD2AAF5785008A20DE /* RadioButton */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A0D9EE02AAF5653008A20DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0D9EC72AAF5651008A20DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A0D9ECE2AAF5651008A20DE;
+			remoteInfo = RadioButtonExample;
+		};
+		4A0D9EEA2AAF5653008A20DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0D9EC72AAF5651008A20DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A0D9ECE2AAF5651008A20DE;
+			remoteInfo = RadioButtonExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A0D9ECF2AAF5651008A20DE /* RadioButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0D9ED22AAF5651008A20DE /* RadioButtonExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonExampleApp.swift; sourceTree = "<group>"; };
+		4A0D9ED42AAF5651008A20DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A0D9ED62AAF5652008A20DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A0D9ED92AAF5652008A20DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A0D9EDF2AAF5653008A20DE /* RadioButtonExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioButtonExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0D9EE32AAF5653008A20DE /* RadioButtonExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonExampleTests.swift; sourceTree = "<group>"; };
+		4A0D9EE92AAF5653008A20DE /* RadioButtonExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioButtonExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0D9EED2AAF5653008A20DE /* RadioButtonExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonExampleUITests.swift; sourceTree = "<group>"; };
+		4A0D9EEF2AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A0D9ECC2AAF5651008A20DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0D9EFE2AAF5785008A20DE /* RadioButton in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0D9EDC2AAF5653008A20DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0D9EE62AAF5653008A20DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A0D9EC62AAF5651008A20DE = {
+			isa = PBXGroup;
+			children = (
+				4A0D9ED12AAF5651008A20DE /* RadioButtonExample */,
+				4A0D9EE22AAF5653008A20DE /* RadioButtonExampleTests */,
+				4A0D9EEC2AAF5653008A20DE /* RadioButtonExampleUITests */,
+				4A0D9ED02AAF5651008A20DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A0D9ED02AAF5651008A20DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D9ECF2AAF5651008A20DE /* RadioButtonExample.app */,
+				4A0D9EDF2AAF5653008A20DE /* RadioButtonExampleTests.xctest */,
+				4A0D9EE92AAF5653008A20DE /* RadioButtonExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A0D9ED12AAF5651008A20DE /* RadioButtonExample */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D9ED22AAF5651008A20DE /* RadioButtonExampleApp.swift */,
+				4A0D9ED42AAF5651008A20DE /* ContentView.swift */,
+				4A0D9ED62AAF5652008A20DE /* Assets.xcassets */,
+				4A0D9ED82AAF5652008A20DE /* Preview Content */,
+			);
+			path = RadioButtonExample;
+			sourceTree = "<group>";
+		};
+		4A0D9ED82AAF5652008A20DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D9ED92AAF5652008A20DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A0D9EE22AAF5653008A20DE /* RadioButtonExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D9EE32AAF5653008A20DE /* RadioButtonExampleTests.swift */,
+			);
+			path = RadioButtonExampleTests;
+			sourceTree = "<group>";
+		};
+		4A0D9EEC2AAF5653008A20DE /* RadioButtonExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D9EED2AAF5653008A20DE /* RadioButtonExampleUITests.swift */,
+				4A0D9EEF2AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift */,
+			);
+			path = RadioButtonExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A0D9ECE2AAF5651008A20DE /* RadioButtonExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A0D9EF32AAF5653008A20DE /* Build configuration list for PBXNativeTarget "RadioButtonExample" */;
+			buildPhases = (
+				4A0D9ECB2AAF5651008A20DE /* Sources */,
+				4A0D9ECC2AAF5651008A20DE /* Frameworks */,
+				4A0D9ECD2AAF5651008A20DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioButtonExample;
+			packageProductDependencies = (
+				4A0D9EFD2AAF5785008A20DE /* RadioButton */,
+			);
+			productName = RadioButtonExample;
+			productReference = 4A0D9ECF2AAF5651008A20DE /* RadioButtonExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A0D9EDE2AAF5653008A20DE /* RadioButtonExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A0D9EF62AAF5653008A20DE /* Build configuration list for PBXNativeTarget "RadioButtonExampleTests" */;
+			buildPhases = (
+				4A0D9EDB2AAF5653008A20DE /* Sources */,
+				4A0D9EDC2AAF5653008A20DE /* Frameworks */,
+				4A0D9EDD2AAF5653008A20DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A0D9EE12AAF5653008A20DE /* PBXTargetDependency */,
+			);
+			name = RadioButtonExampleTests;
+			productName = RadioButtonExampleTests;
+			productReference = 4A0D9EDF2AAF5653008A20DE /* RadioButtonExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A0D9EE82AAF5653008A20DE /* RadioButtonExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A0D9EF92AAF5653008A20DE /* Build configuration list for PBXNativeTarget "RadioButtonExampleUITests" */;
+			buildPhases = (
+				4A0D9EE52AAF5653008A20DE /* Sources */,
+				4A0D9EE62AAF5653008A20DE /* Frameworks */,
+				4A0D9EE72AAF5653008A20DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A0D9EEB2AAF5653008A20DE /* PBXTargetDependency */,
+			);
+			name = RadioButtonExampleUITests;
+			productName = RadioButtonExampleUITests;
+			productReference = 4A0D9EE92AAF5653008A20DE /* RadioButtonExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A0D9EC72AAF5651008A20DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4A0D9ECE2AAF5651008A20DE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4A0D9EDE2AAF5653008A20DE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4A0D9ECE2AAF5651008A20DE;
+					};
+					4A0D9EE82AAF5653008A20DE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4A0D9ECE2AAF5651008A20DE;
+					};
+				};
+			};
+			buildConfigurationList = 4A0D9ECA2AAF5651008A20DE /* Build configuration list for PBXProject "RadioButtonExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A0D9EC62AAF5651008A20DE;
+			packageReferences = (
+				4A0D9EFC2AAF5785008A20DE /* XCRemoteSwiftPackageReference "RadioButton" */,
+			);
+			productRefGroup = 4A0D9ED02AAF5651008A20DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A0D9ECE2AAF5651008A20DE /* RadioButtonExample */,
+				4A0D9EDE2AAF5653008A20DE /* RadioButtonExampleTests */,
+				4A0D9EE82AAF5653008A20DE /* RadioButtonExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A0D9ECD2AAF5651008A20DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0D9EDA2AAF5652008A20DE /* Preview Assets.xcassets in Resources */,
+				4A0D9ED72AAF5652008A20DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0D9EDD2AAF5653008A20DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0D9EE72AAF5653008A20DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A0D9ECB2AAF5651008A20DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0D9ED52AAF5651008A20DE /* ContentView.swift in Sources */,
+				4A0D9ED32AAF5651008A20DE /* RadioButtonExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0D9EDB2AAF5653008A20DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0D9EE42AAF5653008A20DE /* RadioButtonExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0D9EE52AAF5653008A20DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A0D9EEE2AAF5653008A20DE /* RadioButtonExampleUITests.swift in Sources */,
+				4A0D9EF02AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A0D9EE12AAF5653008A20DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A0D9ECE2AAF5651008A20DE /* RadioButtonExample */;
+			targetProxy = 4A0D9EE02AAF5653008A20DE /* PBXContainerItemProxy */;
+		};
+		4A0D9EEB2AAF5653008A20DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A0D9ECE2AAF5651008A20DE /* RadioButtonExample */;
+			targetProxy = 4A0D9EEA2AAF5653008A20DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A0D9EF12AAF5653008A20DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A0D9EF22AAF5653008A20DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A0D9EF42AAF5653008A20DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RadioButtonExample/Preview Content\"";
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Debug;
+		};
+		4A0D9EF52AAF5653008A20DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RadioButtonExample/Preview Content\"";
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Release;
+		};
+		4A0D9EF72AAF5653008A20DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioButtonExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RadioButtonExample";
+			};
+			name = Debug;
+		};
+		4A0D9EF82AAF5653008A20DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioButtonExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RadioButtonExample";
+			};
+			name = Release;
+		};
+		4A0D9EFA2AAF5653008A20DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioButtonExample;
+			};
+			name = Debug;
+		};
+		4A0D9EFB2AAF5653008A20DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioButtonExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A0D9ECA2AAF5651008A20DE /* Build configuration list for PBXProject "RadioButtonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0D9EF12AAF5653008A20DE /* Debug */,
+				4A0D9EF22AAF5653008A20DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A0D9EF32AAF5653008A20DE /* Build configuration list for PBXNativeTarget "RadioButtonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0D9EF42AAF5653008A20DE /* Debug */,
+				4A0D9EF52AAF5653008A20DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A0D9EF62AAF5653008A20DE /* Build configuration list for PBXNativeTarget "RadioButtonExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0D9EF72AAF5653008A20DE /* Debug */,
+				4A0D9EF82AAF5653008A20DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A0D9EF92AAF5653008A20DE /* Build configuration list for PBXNativeTarget "RadioButtonExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0D9EFA2AAF5653008A20DE /* Debug */,
+				4A0D9EFB2AAF5653008A20DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A0D9EFC2AAF5785008A20DE /* XCRemoteSwiftPackageReference "RadioButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukluca/RadioButton";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A0D9EFD2AAF5785008A20DE /* RadioButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D9EFC2AAF5785008A20DE /* XCRemoteSwiftPackageReference "RadioButton" */;
+			productName = RadioButton;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4A0D9EC72AAF5651008A20DE /* Project object */;
+}
