@@ -27,9 +27,9 @@ public struct RadioButton<S, I, R>: View where S: StringProtocol,
     }
 }
 
-#if os(macOS) || os(watchOS) || os(tvOS)
+#if os(macOS) || os(watchOS)
 
-@available(macOS 10.15, watchOS 6.0, tvOS 13.0, *)
+@available(macOS 10.15, watchOS 6.0, *)
 struct ContentView<S, I, R>: View where S: StringProtocol,
                                         I: StringProtocol,
                                      R: RadioButtonRepresentable,
@@ -49,8 +49,8 @@ struct ContentView<S, I, R>: View where S: StringProtocol,
         .pickerStyle(.radioGroup)
     }
 }
-#elseif os(iOS)
-@available(iOS 14.0, *)
+#elseif os(iOS) || os(tvOS)
+@available(iOS 14.0, tvOS 13.0, *)
 struct ContentView<S, I, R>: View where S: StringProtocol,
                                         I: StringProtocol,
                                      R: RadioButtonRepresentable,
@@ -78,7 +78,7 @@ struct ContentView<S, I, R>: View where S: StringProtocol,
     }
 }
 
-@available(iOS 14.0, *)
+@available(iOS 14.0, tvOS 13.0, *)
 extension ContentView {
     struct Item<S, R>: View where S: StringProtocol, R: Hashable {
         
