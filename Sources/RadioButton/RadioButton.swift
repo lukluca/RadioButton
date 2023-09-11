@@ -92,22 +92,15 @@ extension ContentView {
         var body: some View {
             HStack {
                 if isChecked {
-                    ZStack{
-                        Circle()
-                            .fill(Color.blue)
-                            .frame(width: 20, height: 20)
-                        Circle()
-                            .fill(Color.white)
-                            .frame(width: 8, height: 8)
-                    }
+                    Button {}
+                        label: {
+                            Checked()
+                        }
                 } else {
                     Button {
                         isChecked = true
                     } label: {
-                        Circle()
-                            .fill(Color.white)
-                            .frame(width: 20, height: 20)
-                            .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                       Unchecked()
                     }
                 }
                 
@@ -129,4 +122,29 @@ extension ContentView {
         }
     }
 }
+
+extension ContentView.Item {
+    struct Unchecked: View {
+        var body: some View {
+            Circle()
+                .fill(Color.white)
+                .frame(width: 20, height: 20)
+                .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+        }
+    }
+    
+    struct Checked: View {
+        var body: some View {
+            ZStack{
+                Circle()
+                    .fill(Color.blue)
+                    .frame(width: 20, height: 20)
+                Circle()
+                    .fill(Color.white)
+                    .frame(width: 8, height: 8)
+            }
+        }
+    }
+}
+
 #endif
