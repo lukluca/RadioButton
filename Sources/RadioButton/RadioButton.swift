@@ -95,8 +95,7 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
 
 @available(iOS 14.0, tvOS 14.0, *)
 extension ContentView {
-    struct Item<S, Label>: View where S : StringProtocol,
-                                      Label : View {
+    struct Item<Label>: View where Label : View {
         
         @State private var isChecked = false
         
