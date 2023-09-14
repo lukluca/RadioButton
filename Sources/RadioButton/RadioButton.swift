@@ -82,8 +82,8 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
             
             VStack(alignment: .leading) {
                 ForEach(R.allCases) {
-                    NewContentView.Item(item: $0,
-                                        label: label)
+                    ContentView.Item(item: $0,
+                                     label: label)
                         .tag($0)
                 }
             }
