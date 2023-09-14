@@ -65,7 +65,7 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
 
 #elseif os(iOS) || os(tvOS) || os(watchOS)
 
-@available(iOS 14.0, tvOS 14.0, watchOS 6.0, *)
+@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 struct ContentView<S, Label, R>: View where S : StringProtocol,
                                             Label : View,
                                             R : RadioButtonRepresentable,
@@ -93,7 +93,7 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
     }
 }
 
-@available(iOS 14.0, tvOS 14.0, watchOS 6.0, *)
+@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension ContentView {
     struct Item<Label>: View where Label : View {
         
@@ -138,7 +138,7 @@ extension ContentView {
     }
 }
 
-@available(iOS 14.0, tvOS 14.0, watchOS 6.0, *)
+@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension ContentView.Item {
     struct Unchecked: View {
         var body: some View {
