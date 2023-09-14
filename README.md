@@ -30,7 +30,7 @@ or add manually the dependency
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/lukluca/RadioButton", from: "1.0.1")
+    .package(url: "https://github.com/lukluca/RadioButton", from: "1.1.0")
 ]
 ```
 
@@ -67,7 +67,8 @@ For furter configurations, please see RadioButtonExample folder, it contains a v
 
 ## 🔷 Last version
 
-Last version is  `1.1.0`. This version fixes a build error on the package :sob: for watchOS. Please use this version as minimum version if your project supports tvOS.
+Last version is  `1.1.0`. This version fixes a build error on the package :sob: for watchOS. Please use this version as minimum version if your project supports watchOS.
+
 Starting from this version, you can also customise the item's view. 
 
 ## 🔷 Roadmap / TODOs
