@@ -43,9 +43,9 @@ extension RadioButton where Label == Text {
 
 @available(macOS 10.15, watchOS 6.0, *)
 struct ContentView<S, Label, R>: View where S : StringProtocol,
-                                               Label : View,
-                                               R : RadioButtonRepresentable,
-                                               R.AllCases : RandomAccessCollection  {
+                                            Label : View,
+                                            R : RadioButtonRepresentable,
+                                            R.AllCases : RandomAccessCollection  {
     
     let title: S
     @ViewBuilder let label: (R) -> Label
@@ -67,7 +67,7 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
 
 @available(iOS 14.0, tvOS 14.0, *)
 struct ContentView<S, Label, R>: View where S : StringProtocol,
-                                            Label : StringProtocol,
+                                            Label : View,
                                             R : RadioButtonRepresentable,
                                             R.AllCases : RandomAccessCollection  {
     
