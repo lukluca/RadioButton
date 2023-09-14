@@ -4,61 +4,76 @@ import SwiftUI
 public typealias RadioButtonRepresentable = CaseIterable & Hashable & Identifiable
 
 @available(macOS 10.15, iOS 14.0, watchOS 6.0, tvOS 14.0, *)
-public struct RadioButton<S, I, R>: View where S: StringProtocol,
-                                        I: StringProtocol,
-                                     R: RadioButtonRepresentable,
-                                               R.AllCases: RandomAccessCollection  {
+public struct RadioButton<S, Label, R>: View where S : StringProtocol,
+                                                   Label : View,
+                                                   R : RadioButtonRepresentable,
+                                                   R.AllCases : RandomAccessCollection  {
     
     let title: S
-    let itemTitle: KeyPath<R, I>
-  
+    @ViewBuilder let label: (R) -> Label
+    
     @Binding var isSelected: R
     
     public init(title: S,
-                itemTitle: KeyPath<R, I>,
-                isSelected: Binding<R>) {
+                isSelected: Binding<R>,
+                @ViewBuilder label: @escaping (R) -> Label) {
         self.title = title
-        self.itemTitle = itemTitle
+        self.label = label
         self._isSelected = isSelected
     }
-    
+
     public var body: some View {
-        ContentView(title: title, itemTitle: itemTitle, isSelected: $isSelected)
+        ContentView(title: title, label: label, isSelected: $isSelected)
+    }
+}
+
+extension RadioButton where Label == Text {
+    public init<I>(title: S,
+                   itemTitle: KeyPath<R, I>,
+                   isSelected: Binding<R>) where I : StringProtocol {
+        self.title = title
+        label = {
+            Text($0[keyPath: itemTitle])
+        }
+        self._isSelected = isSelected
     }
 }
 
 #if os(macOS) || os(watchOS)
 
 @available(macOS 10.15, watchOS 6.0, *)
-struct ContentView<S, I, R>: View where S: StringProtocol,
-                                        I: StringProtocol,
-                                     R: RadioButtonRepresentable,
-                                    R.AllCases: RandomAccessCollection  {
+struct ContentView<S, Label, R>: View where S : StringProtocol,
+                                               Label : View,
+                                               R : RadioButtonRepresentable,
+                                               R.AllCases : RandomAccessCollection  {
     
     let title: S
-    let itemTitle: KeyPath<R, I>
-  
+    @ViewBuilder let label: (R) -> Label
+    
     @Binding var isSelected: R
     
     var body: some View {
         Picker(title, selection: $isSelected) {
             ForEach(R.allCases) {
-                Text($0[keyPath: itemTitle]).tag($0)
+                label($0)
+                    .tag($0)
             }
         }
         .pickerStyle(.radioGroup)
     }
 }
+
 #elseif os(iOS) || os(tvOS)
+
 @available(iOS 14.0, tvOS 14.0, *)
-struct ContentView<S, I, R>: View where S: StringProtocol,
-                                        I: StringProtocol,
-                                     R: RadioButtonRepresentable,
-                                    R.AllCases: RandomAccessCollection  {
+struct ContentView<S, Label, R>: View where S : StringProtocol,
+                                            Label : StringProtocol,
+                                            R : RadioButtonRepresentable,
+                                            R.AllCases : RandomAccessCollection  {
     
     let title: S
-    let itemTitle: KeyPath<R, I>
-  
+    @ViewBuilder let label: (R) -> Label
+    
     @Binding var isSelected: R
     
     var body: some View {
@@ -67,10 +82,9 @@ struct ContentView<S, I, R>: View where S: StringProtocol,
             
             VStack(alignment: .leading) {
                 ForEach(R.allCases) {
-                    Item(item: $0,
-                         title: itemTitle,
-                         checked: $isSelected)
-                    .tag($0)
+                    NewContentView.Item(item: $0,
+                                        label: label)
+                        .tag($0)
                 }
             }
            
@@ -80,12 +94,13 @@ struct ContentView<S, I, R>: View where S: StringProtocol,
 
 @available(iOS 14.0, tvOS 14.0, *)
 extension ContentView {
-    struct Item<S, R>: View where S: StringProtocol, R: Hashable {
+    struct Item<S, Label>: View where S : StringProtocol,
+                                      Label : View {
         
         @State private var isChecked = false
         
         let item: R
-        let title: KeyPath<R, S>
+        @ViewBuilder let label: (R) -> Label
         
         @Binding var checked: R
         
@@ -104,7 +119,7 @@ extension ContentView {
                     }
                 }
                 
-                Text(item[keyPath: title])
+                label(item)
             }
             .onAppear {
                 isChecked = checked == item
@@ -123,6 +138,7 @@ extension ContentView {
     }
 }
 
+@available(iOS 14.0, tvOS 14.0, *)
 extension ContentView.Item {
     struct Unchecked: View {
         var body: some View {
