@@ -18,7 +18,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ Swift 5+  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ iOS 14+  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ tvOS 14+  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ watchOS 6+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ watchOS 7+
 
 ## 🔷 Installation
 
