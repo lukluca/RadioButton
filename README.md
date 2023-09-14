@@ -77,7 +77,6 @@ It could be extended by implementing the following tasks:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☘️ Add unit/UI tests;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☘️ Make view modifier to set common configuration (font, colors, etc); 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☘️ Support custom item view;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☘️ ... many other improvements.
 
 ## 🔷 Contributing
