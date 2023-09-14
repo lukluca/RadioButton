@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.0] - 14-09-2023
+
+### Added
+
+- Now the package supports custom views used to show the selectable item.
+
+### Fixed
+
+- Now is possible to build on watchOS with mim supported version of 7.
+
 ## [1.0.2] - 11-09-2023
 
 ### Fixed
