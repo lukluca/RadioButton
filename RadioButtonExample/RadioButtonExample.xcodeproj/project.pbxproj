@@ -15,6 +15,15 @@
 		4A0D9EEE2AAF5653008A20DE /* RadioButtonExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9EED2AAF5653008A20DE /* RadioButtonExampleUITests.swift */; };
 		4A0D9EF02AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9EEF2AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift */; };
 		4A0D9EFE2AAF5785008A20DE /* RadioButton in Frameworks */ = {isa = PBXBuildFile; productRef = 4A0D9EFD2AAF5785008A20DE /* RadioButton */; };
+		4A54A5242AAF8ABB009E734C /* RadiioButtonWatchExample Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4A54A5232AAF8ABB009E734C /* RadiioButtonWatchExample Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A54A5292AAF8ABB009E734C /* RadiioButtonWatchExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A54A5282AAF8ABB009E734C /* RadiioButtonWatchExampleApp.swift */; };
+		4A54A52D2AAF8ABC009E734C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A54A52C2AAF8ABC009E734C /* Assets.xcassets */; };
+		4A54A5302AAF8ABC009E734C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A54A52F2AAF8ABC009E734C /* Preview Assets.xcassets */; };
+		4A54A53A2AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A54A5392AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppTests.swift */; };
+		4A54A5442AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A54A5432AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITests.swift */; };
+		4A54A5462AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A54A5452AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITestsLaunchTests.swift */; };
+		4AAB1A3B2AB3705E00DE1782 /* RadioButton in Frameworks */ = {isa = PBXBuildFile; productRef = 4AAB1A3A2AB3705E00DE1782 /* RadioButton */; };
+		4AAB1A3D2AB371C600DE1782 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D9ED42AAF5651008A20DE /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +41,42 @@
 			remoteGlobalIDString = 4A0D9ECE2AAF5651008A20DE;
 			remoteInfo = RadioButtonExample;
 		};
+		4A54A5252AAF8ABB009E734C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0D9EC72AAF5651008A20DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A54A5222AAF8ABB009E734C;
+			remoteInfo = "RadiioButtonWatchExample Watch App";
+		};
+		4A54A5362AAF8ABC009E734C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0D9EC72AAF5651008A20DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A54A5222AAF8ABB009E734C;
+			remoteInfo = "RadiioButtonWatchExample Watch App";
+		};
+		4A54A5402AAF8ABC009E734C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0D9EC72AAF5651008A20DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A54A5222AAF8ABB009E734C;
+			remoteInfo = "RadiioButtonWatchExample Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A54A5492AAF8ABC009E734C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4A54A5242AAF8ABB009E734C /* RadiioButtonWatchExample Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A0D9ECF2AAF5651008A20DE /* RadioButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +89,16 @@
 		4A0D9EE92AAF5653008A20DE /* RadioButtonExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioButtonExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0D9EED2AAF5653008A20DE /* RadioButtonExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonExampleUITests.swift; sourceTree = "<group>"; };
 		4A0D9EEF2AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A54A51E2AAF8ABB009E734C /* RadiioButtonWatchExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadiioButtonWatchExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A54A5232AAF8ABB009E734C /* RadiioButtonWatchExample Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RadiioButtonWatchExample Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A54A5282AAF8ABB009E734C /* RadiioButtonWatchExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiioButtonWatchExampleApp.swift; sourceTree = "<group>"; };
+		4A54A52C2AAF8ABC009E734C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A54A52F2AAF8ABC009E734C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A54A5352AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RadiioButtonWatchExample Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A54A5392AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiioButtonWatchExample_Watch_AppTests.swift; sourceTree = "<group>"; };
+		4A54A53F2AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RadiioButtonWatchExample Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A54A5432AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiioButtonWatchExample_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		4A54A5452AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiioButtonWatchExample_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +124,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A54A5202AAF8ABB009E734C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AAB1A3B2AB3705E00DE1782 /* RadioButton in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A5322AAF8ABC009E734C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A53C2AAF8ABC009E734C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4A0D9EC62AAF5651008A20DE = {
 			isa = PBXGroup;
 			children = (
+				4AAB1A3C2AB371B400DE1782 /* Views */,
 				4A0D9ED12AAF5651008A20DE /* RadioButtonExample */,
 				4A0D9EE22AAF5653008A20DE /* RadioButtonExampleTests */,
 				4A0D9EEC2AAF5653008A20DE /* RadioButtonExampleUITests */,
+				4A54A5272AAF8ABB009E734C /* RadiioButtonWatchExample Watch App */,
+				4A54A5382AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppTests */,
+				4A54A5422AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppUITests */,
 				4A0D9ED02AAF5651008A20DE /* Products */,
+				4AAB1A392AB3705E00DE1782 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +170,10 @@
 				4A0D9ECF2AAF5651008A20DE /* RadioButtonExample.app */,
 				4A0D9EDF2AAF5653008A20DE /* RadioButtonExampleTests.xctest */,
 				4A0D9EE92AAF5653008A20DE /* RadioButtonExampleUITests.xctest */,
+				4A54A51E2AAF8ABB009E734C /* RadiioButtonWatchExample.app */,
+				4A54A5232AAF8ABB009E734C /* RadiioButtonWatchExample Watch App.app */,
+				4A54A5352AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppTests.xctest */,
+				4A54A53F2AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				4A0D9ED22AAF5651008A20DE /* RadioButtonExampleApp.swift */,
-				4A0D9ED42AAF5651008A20DE /* ContentView.swift */,
 				4A0D9ED62AAF5652008A20DE /* Assets.xcassets */,
 				4A0D9ED82AAF5652008A20DE /* Preview Content */,
 			);
@@ -127,6 +211,56 @@
 				4A0D9EEF2AAF5653008A20DE /* RadioButtonExampleUITestsLaunchTests.swift */,
 			);
 			path = RadioButtonExampleUITests;
+			sourceTree = "<group>";
+		};
+		4A54A5272AAF8ABB009E734C /* RadiioButtonWatchExample Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				4A54A5282AAF8ABB009E734C /* RadiioButtonWatchExampleApp.swift */,
+				4A54A52C2AAF8ABC009E734C /* Assets.xcassets */,
+				4A54A52E2AAF8ABC009E734C /* Preview Content */,
+			);
+			path = "RadiioButtonWatchExample Watch App";
+			sourceTree = "<group>";
+		};
+		4A54A52E2AAF8ABC009E734C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A54A52F2AAF8ABC009E734C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A54A5382AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A54A5392AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppTests.swift */,
+			);
+			path = "RadiioButtonWatchExample Watch AppTests";
+			sourceTree = "<group>";
+		};
+		4A54A5422AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A54A5432AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITests.swift */,
+				4A54A5452AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "RadiioButtonWatchExample Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		4AAB1A392AB3705E00DE1782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AAB1A3C2AB371B400DE1782 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D9ED42AAF5651008A20DE /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +322,79 @@
 			productReference = 4A0D9EE92AAF5653008A20DE /* RadioButtonExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4A54A51D2AAF8ABB009E734C /* RadiioButtonWatchExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A54A5512AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample" */;
+			buildPhases = (
+				4A54A51C2AAF8ABB009E734C /* Resources */,
+				4A54A5492AAF8ABC009E734C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A54A5262AAF8ABB009E734C /* PBXTargetDependency */,
+			);
+			name = RadiioButtonWatchExample;
+			productName = RadiioButtonWatchExample;
+			productReference = 4A54A51E2AAF8ABB009E734C /* RadiioButtonWatchExample.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		4A54A5222AAF8ABB009E734C /* RadiioButtonWatchExample Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A54A5502AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample Watch App" */;
+			buildPhases = (
+				4A54A51F2AAF8ABB009E734C /* Sources */,
+				4A54A5202AAF8ABB009E734C /* Frameworks */,
+				4A54A5212AAF8ABB009E734C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RadiioButtonWatchExample Watch App";
+			packageProductDependencies = (
+				4AAB1A3A2AB3705E00DE1782 /* RadioButton */,
+			);
+			productName = "RadiioButtonWatchExample Watch App";
+			productReference = 4A54A5232AAF8ABB009E734C /* RadiioButtonWatchExample Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A54A5342AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A54A5522AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample Watch AppTests" */;
+			buildPhases = (
+				4A54A5312AAF8ABC009E734C /* Sources */,
+				4A54A5322AAF8ABC009E734C /* Frameworks */,
+				4A54A5332AAF8ABC009E734C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A54A5372AAF8ABC009E734C /* PBXTargetDependency */,
+			);
+			name = "RadiioButtonWatchExample Watch AppTests";
+			productName = "RadiioButtonWatchExample Watch AppTests";
+			productReference = 4A54A5352AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A54A53E2AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A54A5532AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample Watch AppUITests" */;
+			buildPhases = (
+				4A54A53B2AAF8ABC009E734C /* Sources */,
+				4A54A53C2AAF8ABC009E734C /* Frameworks */,
+				4A54A53D2AAF8ABC009E734C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A54A5412AAF8ABC009E734C /* PBXTargetDependency */,
+			);
+			name = "RadiioButtonWatchExample Watch AppUITests";
+			productName = "RadiioButtonWatchExample Watch AppUITests";
+			productReference = 4A54A53F2AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +415,20 @@
 					4A0D9EE82AAF5653008A20DE = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 4A0D9ECE2AAF5651008A20DE;
+					};
+					4A54A51D2AAF8ABB009E734C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4A54A5222AAF8ABB009E734C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4A54A5342AAF8ABC009E734C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4A54A5222AAF8ABB009E734C;
+					};
+					4A54A53E2AAF8ABC009E734C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4A54A5222AAF8ABB009E734C;
 					};
 				};
 			};
@@ -230,6 +451,10 @@
 				4A0D9ECE2AAF5651008A20DE /* RadioButtonExample */,
 				4A0D9EDE2AAF5653008A20DE /* RadioButtonExampleTests */,
 				4A0D9EE82AAF5653008A20DE /* RadioButtonExampleUITests */,
+				4A54A51D2AAF8ABB009E734C /* RadiioButtonWatchExample */,
+				4A54A5222AAF8ABB009E734C /* RadiioButtonWatchExample Watch App */,
+				4A54A5342AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppTests */,
+				4A54A53E2AAF8ABC009E734C /* RadiioButtonWatchExample Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +477,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4A0D9EE72AAF5653008A20DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A51C2AAF8ABB009E734C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A5212AAF8ABB009E734C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A54A5302AAF8ABC009E734C /* Preview Assets.xcassets in Resources */,
+				4A54A52D2AAF8ABC009E734C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A5332AAF8ABC009E734C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A53D2AAF8ABC009E734C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,6 +542,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A54A51F2AAF8ABB009E734C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A54A5292AAF8ABB009E734C /* RadiioButtonWatchExampleApp.swift in Sources */,
+				4AAB1A3D2AB371C600DE1782 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A5312AAF8ABC009E734C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A54A53A2AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A54A53B2AAF8ABC009E734C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A54A5442AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITests.swift in Sources */,
+				4A54A5462AAF8ABC009E734C /* RadiioButtonWatchExample_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +580,21 @@
 			isa = PBXTargetDependency;
 			target = 4A0D9ECE2AAF5651008A20DE /* RadioButtonExample */;
 			targetProxy = 4A0D9EEA2AAF5653008A20DE /* PBXContainerItemProxy */;
+		};
+		4A54A5262AAF8ABB009E734C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A54A5222AAF8ABB009E734C /* RadiioButtonWatchExample Watch App */;
+			targetProxy = 4A54A5252AAF8ABB009E734C /* PBXContainerItemProxy */;
+		};
+		4A54A5372AAF8ABC009E734C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A54A5222AAF8ABB009E734C /* RadiioButtonWatchExample Watch App */;
+			targetProxy = 4A54A5362AAF8ABC009E734C /* PBXContainerItemProxy */;
+		};
+		4A54A5412AAF8ABC009E734C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A54A5222AAF8ABB009E734C /* RadiioButtonWatchExample Watch App */;
+			targetProxy = 4A54A5402AAF8ABC009E734C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,7 +734,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,7 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadioButtonExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,6 +859,178 @@
 			};
 			name = Release;
 		};
+		4A54A5472AAF8ABC009E734C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				INFOPLIST_KEY_CFBundleDisplayName = RadiioButtonWatchExample;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadiioButtonWatchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4A54A5482AAF8ABC009E734C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				INFOPLIST_KEY_CFBundleDisplayName = RadiioButtonWatchExample;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadiioButtonWatchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4A54A54A2AAF8ABC009E734C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RadiioButtonWatchExample Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RadiioButtonWatchExample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadiioButtonWatchExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		4A54A54B2AAF8ABC009E734C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RadiioButtonWatchExample Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RadiioButtonWatchExample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.lukluca.RadiioButtonWatchExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		4A54A54C2AAF8ABC009E734C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.lukluca.RadiioButtonWatchExample-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadiioButtonWatchExample Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RadiioButtonWatchExample Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		4A54A54D2AAF8ABC009E734C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.lukluca.RadiioButtonWatchExample-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadiioButtonWatchExample Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RadiioButtonWatchExample Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		4A54A54E2AAF8ABC009E734C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.lukluca.RadiioButtonWatchExample-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RadiioButtonWatchExample Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		4A54A54F2AAF8ABC009E734C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G58Y4PZ34Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.lukluca.RadiioButtonWatchExample-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RadiioButtonWatchExample Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,6 +1070,42 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4A54A5502AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A54A54A2AAF8ABC009E734C /* Debug */,
+				4A54A54B2AAF8ABC009E734C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A54A5512AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A54A5472AAF8ABC009E734C /* Debug */,
+				4A54A5482AAF8ABC009E734C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A54A5522AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A54A54C2AAF8ABC009E734C /* Debug */,
+				4A54A54D2AAF8ABC009E734C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A54A5532AAF8ABC009E734C /* Build configuration list for PBXNativeTarget "RadiioButtonWatchExample Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A54A54E2AAF8ABC009E734C /* Debug */,
+				4A54A54F2AAF8ABC009E734C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -610,13 +1114,18 @@
 			repositoryURL = "https://github.com/lukluca/RadioButton";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		4A0D9EFD2AAF5785008A20DE /* RadioButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A0D9EFC2AAF5785008A20DE /* XCRemoteSwiftPackageReference "RadioButton" */;
+			productName = RadioButton;
+		};
+		4AAB1A3A2AB3705E00DE1782 /* RadioButton */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4A0D9EFC2AAF5785008A20DE /* XCRemoteSwiftPackageReference "RadioButton" */;
 			productName = RadioButton;

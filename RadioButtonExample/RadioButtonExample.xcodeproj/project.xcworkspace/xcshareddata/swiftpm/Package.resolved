@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukluca/RadioButton",
       "state" : {
-        "revision" : "b204dd7367d071d3fbd732714dc7220dbea75504",
-        "version" : "1.0.2"
+        "revision" : "4a11120a97b0e3585009d7b2705f21bbbaf3cf27",
+        "version" : "1.1.0"
       }
     }
   ],
