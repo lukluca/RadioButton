@@ -9,34 +9,54 @@ public struct RadioButton<S, Label, R>: View where S : StringProtocol,
                                                    R : RadioButtonRepresentable,
                                                    R.AllCases : RandomAccessCollection  {
     
+    let alignment: Alignment
     let title: S
     @ViewBuilder let label: (R) -> Label
     
     @Binding var isSelected: R
     
-    public init(title: S,
+    public init(alignment: Alignment = .vertical,
+                title: S,
                 isSelected: Binding<R>,
                 @ViewBuilder label: @escaping (R) -> Label) {
+        self.alignment = alignment
         self.title = title
         self.label = label
         self._isSelected = isSelected
     }
 
     public var body: some View {
-        ContentView(title: title, label: label, isSelected: $isSelected)
+        ContentView(alignment: alignment,
+                    title: title,
+                    label: label,
+                    isSelected: $isSelected)
     }
 }
 
+@available(macOS 10.15, iOS 14.0, watchOS 6.0, tvOS 14.0, *)
 extension RadioButton where Label == Text {
-    public init<I>(title: S,
+    public init<I>(alignment: Alignment = .vertical,
+                   title: S,
                    itemTitle: KeyPath<R, I>,
                    isSelected: Binding<R>) where I : StringProtocol {
+        self.alignment = alignment
         self.title = title
         label = {
             Text($0[keyPath: itemTitle])
         }
         self._isSelected = isSelected
     }
+}
+
+@available(macOS 10.15, iOS 14.0, watchOS 6.0, tvOS 14.0, *)
+extension RadioButton {
+    public typealias Alignment = RadioButtonAlignment
+}
+
+@available(macOS 10.15, iOS 14.0, watchOS 6.0, tvOS 14.0, *)
+public enum RadioButtonAlignment {
+    case vertical
+    case horizontal
 }
 
 #if os(macOS)
@@ -47,6 +67,7 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
                                             R : RadioButtonRepresentable,
                                             R.AllCases : RandomAccessCollection  {
     
+    let alignment: Alignment
     let title: S
     @ViewBuilder let label: (R) -> Label
     
@@ -60,6 +81,7 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
             }
         }
         .pickerStyle(.radioGroup)
+        .radioButtonAlignment(alignment)
     }
 }
 
@@ -72,29 +94,55 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
                                             R.AllCases : RandomAccessCollection  {
     
     let title: S
+    let alignment: Alignment
     @ViewBuilder let label: (R) -> Label
     
     @Binding var isSelected: R
     
     var body: some View {
         HStack(alignment: .top) {
+            
             Text(title)
             
-            VStack(alignment: .leading) {
-                ForEach(R.allCases) {
-                    ContentView.Item(item: $0,
-                                     label: label,
-                                     checked: $isSelected)
-                        .tag($0)
+            switch alignment {
+            case .vertical:
+                VStack(alignment: .leading) {
+                    ContentView.Items(label: label,
+                                      checked: $isSelected)
+                }
+            case .horizontal:
+                HStack {
+                    ContentView.Items(label: label,
+                                      checked: $isSelected)
                 }
             }
-           
         }
     }
 }
 
 @available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension ContentView {
+    struct Items<Label, R>: View where Label : View,
+                                       R : RadioButtonRepresentable,
+                                       R.AllCases : RandomAccessCollection {
+        
+        @ViewBuilder let label: (R) -> Label
+        
+        @Binding var isSelected: R
+        
+        var body: some View {
+            ForEach(R.allCases) {
+                ContentView.Items.Item(item: $0,
+                                       label: label,
+                                       checked: $isSelected)
+                    .tag($0)
+            }
+        }
+    }
+}
+
+@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
+extension Items {
     struct Item<Label>: View where Label : View {
         
         @State private var isChecked = false
@@ -162,5 +210,38 @@ extension ContentView.Item {
         }
     }
 }
+
+#endif
+
+@available(macOS 10.15, iOS 14.0, watchOS 6.0, tvOS 14.0, *)
+extension ContentView {
+    typealias Alignment = RadioButtonAlignment
+}
+
+#if os(macOS)
+
+@available(macOS 10.15, *)
+extension View {
+    func radioButtonAlignment(_ alignment: RadioButtonAlignment) -> some View {
+        modifier(RadioButtonAlignmentModifier(alignment: alignment))
+    }
+}
+
+@available(macOS 10.15, *)
+struct RadioButtonAlignmentModifier: ViewModifier {
+    
+    let alignment: RadioButtonAlignment
+    
+    func body(content: Content) -> some View {
+        switch alignment {
+        case .vertical:
+            content
+        case .horizontal:
+            content.horizontalRadioGroupLayout()
+        }
+    }
+}
+
+#elseif os(iOS) || os(tvOS) || os(watchOS)
 
 #endif
