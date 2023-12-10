@@ -93,8 +93,8 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
                                             R : RadioButtonRepresentable,
                                             R.AllCases : RandomAccessCollection  {
     
-    let title: S
     let alignment: Alignment
+    let title: S
     @ViewBuilder let label: (R) -> Label
     
     @Binding var isSelected: R
@@ -108,12 +108,12 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
             case .vertical:
                 VStack(alignment: .leading) {
                     ContentView.Items(label: label,
-                                      checked: $isSelected)
+                                      isSelected: $isSelected)
                 }
             case .horizontal:
                 HStack {
                     ContentView.Items(label: label,
-                                      checked: $isSelected)
+                                      isSelected: $isSelected)
                 }
             }
         }
@@ -122,9 +122,7 @@ struct ContentView<S, Label, R>: View where S : StringProtocol,
 
 @available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension ContentView {
-    struct Items<Label, R>: View where Label : View,
-                                       R : RadioButtonRepresentable,
-                                       R.AllCases : RandomAccessCollection {
+    struct Items: View {
         
         @ViewBuilder let label: (R) -> Label
         
@@ -187,7 +185,7 @@ extension ContentView.Items {
 }
 
 @available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
-extension ContentView.Item {
+extension ContentView.Items.Item {
     struct Unchecked: View {
         var body: some View {
             Circle()
