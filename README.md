@@ -67,9 +67,9 @@ For furter configurations, please see RadioButtonExample folder, it contains a v
 
 ## 🔷 Last version
 
-Last version is  `1.1.0`. This version fixes a build error on the package :sob: for watchOS. Please use this version as minimum version if your project supports watchOS.
+Last version is `1.2.0`.
 
-Starting from this version, you can also customise the item's view. 
+Starting from this version, you can use a vertical or an horizontal alignment.
 
 ## 🔷 Roadmap / TODOs
 
