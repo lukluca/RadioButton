@@ -141,7 +141,7 @@ extension ContentView {
 
 @available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension ContentView.Items {
-    struct Item<Label>: View where Label : View {
+    struct Item: View {
         
         @State private var isChecked = false
         
