@@ -57,6 +57,7 @@ extension RadioButton {
 public enum RadioButtonAlignment {
     case vertical
     case horizontal
+    //TODO add custom view container instead of v stack or h stack
 }
 
 #if os(macOS)
