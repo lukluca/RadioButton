@@ -10,14 +10,25 @@ import RadioButton
 
 struct ContentView: View {
     
-    @State private var city = City.milano
+    @State private var cityVertical = City.milano
+    @State private var cityHorizontal = City.milano
     
     var body: some View {
-        RadioButton(title: "Cities: ",
-                    itemTitle: \.rawValue,
-                    isSelected: $city)
-        .padding()
-    }
+           VStack(spacing: 20) {
+               //defaults to vertical
+               RadioButton(title: "Cities: ",
+                           itemTitle: \.rawValue,
+                           isSelected: $cityVertical)
+
+
+               RadioButton(alignment: .horizontal,
+                           title: "Cities: ",
+                           itemTitle: \.rawValue,
+                           isSelected: $cityHorizontal)
+           }
+           .padding(20)
+           .border(Color.gray)
+       }
 }
 
 extension ContentView {
